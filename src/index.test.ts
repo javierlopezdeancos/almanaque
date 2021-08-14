@@ -19,7 +19,7 @@ describe('Almanaque', () => {
   });
 
   test('should return month days at the beginning to Monday 12 of October of 1942', () => {
-    expect(JSON.stringify(almanaque.currentDays)).toStrictEqual(JSON.stringify(discoveryOfAmericaMonthDays));
+    expect(JSON.stringify(almanaque.currentDays)).toBe(JSON.stringify(discoveryOfAmericaMonthDays));
   });
 
   test('should return current like Sunday 1 of November of 1942 if next month', () => {

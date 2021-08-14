@@ -29,13 +29,11 @@ export function AlmanaqueComponent() {
   );
 
   const nextMonth = () => {
-    console.log('next month')
     almanaque.nextMonth();
     setCurrentDays(almanaque.currentDays);
   }
 
   const prevMonth = () => {
-    console.log('prev month')
     almanaque.prevMonth();
     setCurrentDays(almanaque.currentDays);
   }

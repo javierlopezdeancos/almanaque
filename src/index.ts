@@ -81,7 +81,6 @@ export default class Almanaque implements IAlmanaque {
   }
 
   private getMonths(): string[] {
-    console.log('locale: ', this._locale)
     const months = {
       'en-us': [
         'January',
