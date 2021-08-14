@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react';
-
-import Almanaque, { Day } from './almanaque.lib';
+import Almanaque, { Day } from 'almanaque';
 
 import '../button/button.component.css'
 import '../grid/grid.component.css';
