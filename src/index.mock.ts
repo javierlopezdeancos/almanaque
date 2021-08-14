@@ -23,7 +23,7 @@ export const weekdays = [
   'Sat'
 ];
 
-export const discoveryOfAmericaDate = new Date();
+export const discoveryOfAmericaDate = new Date('October 12, 1942 03:24:00');
 
 discoveryOfAmericaDate.setMonth(9);
 discoveryOfAmericaDate.setFullYear(1942);
