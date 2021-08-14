@@ -1,6 +1,6 @@
 {
   "name": "almanaque",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Another calendar typescript library",
   "repository": {
     "type": "git",
