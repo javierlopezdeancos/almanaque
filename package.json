@@ -1,43 +1,44 @@
 {
   "name": "almanaque",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+  "description": "Another calendar typescript library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierlopezdeancos/almanaque.git"
+  },
+  "author": "javierlopezdeancos@outlook.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/javierlopezdeancos/almanaque/issues"
+  },
+  "homepage": "https://github.com/javierlopezdeancos/almanaque#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "type": "module",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npx tsc",
+    "test": "jest src/index.test.ts",
+    "test:watch": "jest src/index.test.ts --watch"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "jest": "^26.6.3",
+    "jest-config": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
   }
 }

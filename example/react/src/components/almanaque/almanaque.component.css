@@ -1,0 +1,40 @@
+.almanaque {
+  padding: 0 2rem;
+}
+
+.almanaque-month-view-week-day {
+  grid-auto-rows: 2rem;
+  font-weight: bold;
+  padding: .75rem .75rem;
+  border: 1px solid #e2e2e2;
+}
+
+.almanaque-month-view-day {
+  border: 1px solid #e2e2e2;
+  padding: .5rem .75rem;
+  font-size: 2rem;
+  color: #ececec;
+}
+
+
+.almanaque-month-view-day.almanaque-month-view-day--current {
+  color: #565656;
+}
+
+.almanaque-month-view-day.almanaque-month-view-day--selected {
+  border: 1px solid #e2e2e2;
+  background: #e2e2e2;
+  color: #252525;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.almanaque-month-view-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.almanaque-month-view-actions .button:first-child {
+  margin-right: 1rem;
+}
