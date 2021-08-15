@@ -30,7 +30,7 @@ export type Locales = typeof Locale[keyof typeof Locale];
 
 export type Day = {
   currentMonth: boolean;
-  date: Date;
+  date: string;
   month: number;
   number: number;
   selected: boolean;
@@ -156,7 +156,7 @@ export default class Almanaque implements IAlmanaque {
 
       let monthDay = {
         currentMonth: isCurrentMonth,
-        date: new Date(this._firstDayOfMonth),
+        date: new Date(this._firstDayOfMonth).toString(),
         month: this._firstDayOfMonth.getMonth(),
         number: this._firstDayOfMonth.getDate(),
         selected: isCurrentMonth ? this._firstDayOfMonth.toDateString() === this._today.toDateString() : false,
