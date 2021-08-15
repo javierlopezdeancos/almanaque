@@ -1,8 +1,12 @@
 # Almanaque React Example
 ## To try it
 
-`npm install`
+You need to install [yarn](https://yarnpkg.com/getting-started).
 
-and then
+Install dependencies:
 
-`npm start`
+`yarn install`
+
+and then run the create react app:
+
+`yarn start`
