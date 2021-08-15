@@ -25,7 +25,7 @@ export declare const Locale: {
 export declare type Locales = typeof Locale[keyof typeof Locale];
 export declare type Day = {
     currentMonth: boolean;
-    date: Date;
+    date: string;
     month: number;
     number: number;
     selected: boolean;

@@ -96,7 +96,7 @@ class Almanaque {
             const isCurrentMonth = this._firstDayOfMonth.getMonth() === this._currentDay.getMonth();
             let monthDay = {
                 currentMonth: isCurrentMonth,
-                date: new Date(this._firstDayOfMonth),
+                date: new Date(this._firstDayOfMonth).toString(),
                 month: this._firstDayOfMonth.getMonth(),
                 number: this._firstDayOfMonth.getDate(),
                 selected: isCurrentMonth ? this._firstDayOfMonth.toDateString() === this._today.toDateString() : false,
