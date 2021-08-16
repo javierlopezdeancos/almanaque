@@ -1,3 +1,5 @@
+import { Day } from './';
+
 export const months = [
   'January',
   'February',
@@ -23,7 +25,7 @@ export const weekdays = [
   'Sat'
 ];
 
-export const discoveryOfAmericaDate = new Date('October 12, 1942 03:24:00');
+export const discoveryOfAmericaDate = new Date('October 12, 1942 00:00:00');
 
 discoveryOfAmericaDate.setMonth(9);
 discoveryOfAmericaDate.setFullYear(1942);
@@ -367,3 +369,22 @@ export const discoveryOfAmericaMonthDays = [
     year: 1942
   }
 ]
+
+export const getDiscoveryOfAmericaMonthDays = (): Day[] => {
+  return discoveryOfAmericaMonthDays.map((day: Day): Day => {
+    const shallowDate = new Date(discoveryOfAmericaDate);
+
+    shallowDate.setMonth(day.month);
+    shallowDate.setFullYear(day.year);
+    shallowDate.setDate(day.number);
+
+    return {
+      date: shallowDate.toString(),
+      currentMonth: day.currentMonth,
+      month: day.month,
+      number: day.number,
+      selected: day.selected,
+      year: day.year,
+    }
+  })
+};

@@ -1,5 +1,5 @@
 import Almanaque from './';
-import { discoveryOfAmericaDate, discoveryOfAmericaMonthDays, months, weekdays } from './index.mock';
+import { discoveryOfAmericaDate, months, weekdays, getDiscoveryOfAmericaMonthDays } from './index.mock';
 
 const almanaque = new Almanaque(discoveryOfAmericaDate, 'en-us');
 
@@ -19,6 +19,8 @@ describe('Almanaque', () => {
   });
 
   test('should return month days at the beginning to Monday 12 of October of 1942', () => {
+    const discoveryOfAmericaMonthDays = getDiscoveryOfAmericaMonthDays();
+
     expect(almanaque.currentDays).toStrictEqual(discoveryOfAmericaMonthDays);
   });
 
